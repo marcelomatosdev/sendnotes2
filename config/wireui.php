@@ -115,6 +115,10 @@ return [
      */
 
     'components' => Config::defaultComponents([
+        'dropdown' => [
+            'class' => Components\Dropdown::class,
+            'alias' => 'wui-dropdown',
+        ], 
         // 'button' => [
         //     'alias' => 'new-button',
         // ],
