@@ -1,6 +1,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 import colors from 'tailwindcss/colors';
+import icons from 'tailwindcss/line-clamp';
 
 /** @type {import('tailwindcss').Config} */
 export default {

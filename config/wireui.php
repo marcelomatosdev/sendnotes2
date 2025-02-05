@@ -104,6 +104,9 @@ return [
 
     'toggle' => Config::toggle(),
 
+
+    
+
     /*
     |--------------------------------------------------------------------------
     | WireUI Components
@@ -119,6 +122,10 @@ return [
             'class' => Components\Dropdown::class,
             'alias' => 'wui-dropdown',
         ], 
+        'button.circle' => [
+            'class' => Components\CircleButton::class,
+            'alias' => 'button.circle',
+        ],
         // 'button' => [
         //     'alias' => 'new-button',
         // ],
