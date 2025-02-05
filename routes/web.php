@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Note;
+use Livewire\Volt\Volt;
 
 Route::view('/', 'welcome');
 
@@ -21,7 +22,9 @@ Route::view('notes/create', 'notes.create')
     ->middleware(['auth'])
     ->name('notes.create');
 
-    
+    Volt::route('notes.edit', 'notes/{note}/edit', 'notes.edit')
+    ->middleware(['auth'])
+    ->name('notes.edit');
 
     Route::get('notes/{note}', function (Note $note) {
         if (! $note->is_published) {
