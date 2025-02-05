@@ -53,7 +53,7 @@ new class extends Component {
                         <div class="flex justify-between">
                             <div>
                                 @can('update', $note)
-                                    <a href="{{ route('notes.edit', $note) }}" wire:navigate
+                                    <a href="{{ route('notes.edit-note', $note) }}" wire:navigate
                                         class="text-xl font-bold hover:underline hover:text-blue-500">{{ $note->title }}</a>
                                 @else
                                     <p class="text-xl font-bold text-gray-500">{{ $note->title }}</p>
